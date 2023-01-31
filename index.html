@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css选择器</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      background-color: black;
+      color: #fff;
+      padding: 10px;
+    }
+    /* 类选择器-------------- */
+    .box {
+      padding: 10px;
+      color: #fff;
+      background-color: black;
+    }
+
+    /* ID选择器 */
+    #box {
+      padding: 10px;
+      color: #fff;
+      background-color: black;
+    }
+
+    /* 属性选择器 */
+    input[type = 'text'] {
+      background-color: yellow;
+    }
+
+    /* 组合选择器\继承选择器 */
+    .boxs span, .box2 {
+      color: red;
+    }
+    /* 伪类选择器 */
+    .box3:hover {
+      color: rgb(0, 255, 204);
+    }
+  </style>
+</head>
+<body>
+  <h2>标签选择器</h2>
+  <p>p、div、span</p>
+
+  <!-- 类选择器 ------------ -->
+  <h2>类选择器</h2>
+  <p class="box">class="box"</p>
+
+  <!-- ID选择器 -->
+  <h2>ID选择器</h2>
+  <p id="box">id="box"</p>
+
+  <!-- 全局选择器 -->
+  <h2>全局选择器</h2>
+  <p>" * "</p>
+
+  <!-- 属性选择器 -->
+  <h2>属性选择器</h2>
+  <p>input[type = 'text'] name:<input type = "text"></p>
+
+  <!-- 组合选择器 -->
+  <h2>组合选择器</h2>
+  <p class="boxs"><span>.boxs span</span></p>
+
+  <!-- 继承选择器 -->
+  <h2>继承选择器</h2>
+  <p class="box2"><span>div, p(中间用逗号隔开)</span></p>
+
+  <!-- 伪类选择器 -->
+  <h2>伪类选择器、结构伪类选择器</h2>
+  <p class="box3">hover、active、link、visited, :fisrt-child、:fisrt-child</p>
+</body>
+</html>
